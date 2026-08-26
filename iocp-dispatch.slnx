@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="iocp-dispatch/iocp-dispatch.vcxproj" Id="b36525b4-01c3-4e34-9fa1-08690c6ecc18" />
+</Solution>

@@ -1,0 +1,83 @@
+# Based on your code style
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Always
+ContinuationIndentWidth: 4
+IndentCaseLabels: true
+IndentCaseBlocks: false
+NamespaceIndentation: All
+AccessModifierOffset: -4  # This removes the extra indent before public/private/protected
+
+# Braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: Always
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  AfterCaseLabel: true  # This ensures braces after case labels go on new line
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeLambdaBody: true
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+# Spacing - matches your style with spaces inside parentheses
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+SpacesInCStyleCastParentheses: true
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceInEmptyParentheses: true
+SpacesInAngles: true
+SpaceAfterTemplateKeyword: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeRangeBasedForLoopColon: true
+
+# Line breaks
+ColumnLimit: 0  # No line length limit (your code has long lines)
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBinaryOperators: None
+BreakConstructorInitializers: BeforeColon
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Left
+AlignOperands: true
+AlignTrailingComments: false
+PointerAlignment: Left  # int* var not int *var
+
+# Other
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+SortIncludes: false
+ReflowComments: false
+FixNamespaceComments: false
+
+# Lambda formatting
+LambdaBodyIndentation: OuterScope
+AllowShortLambdasOnASingleLine: None
+
+# Penalties (to avoid breaking certain patterns)
+PenaltyBreakBeforeFirstCallParameter: 1000
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
